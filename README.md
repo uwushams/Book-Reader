@@ -11,8 +11,10 @@ Here is the project flow diagram:
 
 ![project flow](https://github.com/shayanalibhatti/PDF_text_to_audio_converter/blob/master/audiobook%20image.png?raw=true)
 
-1) First, we take the PDF file and convert each page into image using PyMuPDF software.
-2) Then, we take the image(s) and scan the text in the image using Pytesseract OCR software.
+1)import PyMuPDF by pip
+2) Next, we take the PDF file and convert each page into image using PyMuPDF software.
+3) import Pyesseract OCR software
+4) Then, we take the image(s) and scan the text in the image using Pytesseract OCR software.
 3) Then, we use Google Text to Speech (gTTS) library to convert text to audio file.
 3) Lastly, we get the Pygame mixer to play the audio file loud.
 
@@ -20,6 +22,7 @@ Here is the project flow diagram:
 The software libraries required to run this code can be installed using:
 
 pip install -r requirements.txt
+pip install -r requirements.txt --user (otherwise)
 
 #### Conclusion
 It was seen that the code performs really well in reading straightforward PDF text files, however, if equations are involved in the text, then the reader cannot properly read the equations. Hence, the code is good for simple text but not for scientific papers as it will fumble reading the equations. However, text will be read just fine. 
