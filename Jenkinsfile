@@ -5,6 +5,7 @@ pipeline {
               
               steps {
                   echo "This is building phase...."
+                    echo "trigger"
               }
               
               }
